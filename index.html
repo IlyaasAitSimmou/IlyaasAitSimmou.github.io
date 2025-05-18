@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Boba Paradise</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-bubbles" id="bubbles"></div>
+    <div class="container">
+        <header>
+            <h1>Purple Boba Paradise</h1>
+            <div class="tagline">Experience the magic of our premium bubble tea</div>
+        </header>
+        
+        <div class="card-container">
+            <div class="card">
+                <h2>Taro Dream</h2>
+                <p>Our signature purple drink made with premium taro root, fresh milk, and chewy tapioca pearls that will transport you to boba heaven.</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            
+            <div class="card">
+                <h2>Lavender Milk Tea</h2>
+                <p>Fragrant lavender infused into our premium tea, mixed with creamy milk and your choice of purple sweet potato or classic pearls.</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+            
+            <div class="card">
+                <h2>Grape Galaxy</h2>
+                <p>Fresh grape juice with popping boba pearls that burst with flavor in your mouth. A refreshing cosmic experience.</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2025 Purple Boba Paradise. All rights reserved.
+    </footer>
+    
+    <script>
+        // Create floating bubbles effect
+        const bubblesContainer = document.getElementById('bubbles');
+        
+        function createBubbles() {
+            for (let i = 0; i < 20; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // Random properties
+                const size = Math.random() * 100 + 20;
+                const left = Math.random() * 100;
+                
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${left}%`;
+                bubble.style.animationDelay = `${Math.random() * 15}s`;
+                bubble.style.animationDuration = `${Math.random() * 10 + 10}s`;
+                
+                bubblesContainer.appendChild(bubble);
+            }
+        }
+        
+        createBubbles();
+    </script>
+</body>
+</html>
