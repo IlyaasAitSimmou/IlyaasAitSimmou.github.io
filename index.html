@@ -1,68 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple Boba Paradise</title>
-<link rel="stylesheet" href="style.css">
+    <title>Ilyaas get's boba tea - justification</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="floating-bubbles" id="bubbles"></div>
     <div class="container">
         <header>
             <h1>BOBA TEA</h1>
-            <div class="tagline">Why I deserve boba tea</div>
+            <div class="card">Why I deserve boba tea</div>
         </header>
         
-        <div class="card-container">
+        <div>
             <div class="card">
                 <h2>I like boba</h2>
                 <p>I enjoy drinking boba so I should get boba.</p>
-                <a href="#" class="btn">Order Now</a>
             </div>
             
             <div class="card">
                 <h2>I don't like not getting boba</h2>
                 <p>I wouldn't like it if I don't get boba so I should get Boba</p>
-                <a href="#" class="btn">Order Now</a>
             </div>
             
             <div class="card">
                 <h2>I must get boba</h2>
                 <p>Due to my unquenched thirst, insatiable cravings, and unwavering love for boba tea, I must indulge in its delightful flavors. For it is to me the wild yellow yonder of the sun as it sets beneath the horizon and the clouds as they glow orange.</p>
-                <a href="#" class="btn">Order Now</a>
             </div>
         </div>
     </div>
-    
-    <footer>
-        &copy; 2025 I have to have boba tea
-    </footer>
-    
-    <script>
-        // Create floating bubbles effect
-        const bubblesContainer = document.getElementById('bubbles');
-        
-        function createBubbles() {
-            for (let i = 0; i < 20; i++) {
-                const bubble = document.createElement('div');
-                bubble.classList.add('bubble');
-                
-                // Random properties
-                const size = Math.random() * 100 + 20;
-                const left = Math.random() * 100;
-                
-                bubble.style.width = `${size}px`;
-                bubble.style.height = `${size}px`;
-                bubble.style.left = `${left}%`;
-                bubble.style.animationDelay = `${Math.random() * 15}s`;
-                bubble.style.animationDuration = `${Math.random() * 10 + 10}s`;
-                
-                bubblesContainer.appendChild(bubble);
-            }
-        }
-        
-        createBubbles();
-    </script>
 </body>
 </html>
